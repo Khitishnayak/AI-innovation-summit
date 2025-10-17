@@ -51,24 +51,8 @@ export default function Footer() {
 
         {/* Partners Section */}
         <div className="border-t border-white/10 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            {/* Macbease */}
-            <a
-              href="https://macbease.com/app/event/68f0739826b6d191febb6d98"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
-            >
-              <Image
-                src="/images/partners/Macbease_White-01.png"
-                alt="Macbease"
-                width={120}
-                height={40}
-                className="object-contain"
-              />
-            </a>
-
-            {/* Vickeybytes */}
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h4 className="text-lg font-semibold text-gray-400">Powered by</h4>
             <div className="p-4 bg-white/5 rounded-lg">
               <Image
                 src="/images/partners/vickybytes.jpeg"

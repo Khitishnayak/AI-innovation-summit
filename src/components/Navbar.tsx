@@ -109,13 +109,13 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="https://macbease.com/app/event/68f0739826b6d191febb6d98"
+                        <a
+              href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 inline-block"
+              className="hidden md:block bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
             >
-              Register Now
+              Register
             </a>
           </div>
 
@@ -154,11 +154,11 @@ export default function Navbar() {
                 {item.name}
               </button>
             ))}
-            <a
-              href="https://macbease.com/app/event/68f0739826b6d191febb6d98"
+                        <a
+              href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
-              className="block mt-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-full font-semibold text-center hover:from-purple-600 hover:to-blue-600 transition-all"
+              className="w-full bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 text-center"
             >
               Register Now
             </a>

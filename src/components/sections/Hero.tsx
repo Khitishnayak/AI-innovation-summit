@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -149,7 +150,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center px-4"
           >
             <a
-              href="https://macbease.com/app/event/68f0739826b6d191febb6d98"
+              href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-center"
@@ -175,7 +176,7 @@ export default function Hero() {
                 </h3>
                 <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
                   <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full border border-purple-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
-                    <span className="font-semibold">💰 ₹45L Funding</span>
+                    <span className="font-semibold">🏆 Grade Revision</span>
                   </div>
                   <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-full border border-blue-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
                     <span className="font-semibold">🎓 Course Exemption</span>

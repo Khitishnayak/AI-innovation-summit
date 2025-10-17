@@ -12,7 +12,7 @@ export default function Partners() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const logoRef = useRef<HTMLAnchorElement>(null);
   // Macbease event booking link
-  const [macbeaseUrl] = useState("https://macbease.com/app/event/68f0739826b6d191febb6d98");
+  const [macbeaseUrl] = useState("https://tinyurl.com/MacbeaseTheGreatLPUIdeathon");
 
   useEffect(() => {
     const ctx = gsap.context(() => {

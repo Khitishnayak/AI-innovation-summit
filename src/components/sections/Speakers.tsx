@@ -12,7 +12,7 @@ const speakers = [
   {
     name: "Mr. Vivek Sridhar",
     title: "CTO – Microsoft for Startups",
-    subtitle: "AI Advisor, Investor & Founder",
+    subtitle: "AI Advisor & Founder",
     description:
       "Seasoned technophile and Open Source contributor with 18+ years of experience. Previously Developer Advocate at DigitalOcean, Co-Founder at NoodleNext Technology, and Software Developer at IBM Rational.",
     expertise: ["AI & Cloud Computing", "Startup Mentorship", "Open Source", "DevOps"],

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
-              AI Innovation Summit 2025
+              THE GREAT LPU&apos;S IDEATHON 2025
             </h3>
             <p className="text-gray-400 mb-6 text-sm sm:text-base">
               Organized by Student Career Committee, School of Computer Science and Engineering, LPU.
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-400">
-          <p className="text-sm sm:text-base">© 2025 AI Innovation Summit - The Great LPU&apos;s Hackathon. All rights reserved.</p>
+          <p className="text-sm sm:text-base">© 2025 AI Innovation Summit - The Great LPU&apos;s Ideathon 2025. All rights reserved.</p>
           <p className="mt-2 text-xs sm:text-sm">Organized by Student Career Committee, School of Computer Science and Engineering</p>
         </div>
       </div>

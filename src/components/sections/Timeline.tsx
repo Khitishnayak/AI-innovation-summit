@@ -15,7 +15,7 @@ const timeline = [
   },
   {
     date: "28th October 2025",
-    title: "AI Innovation Summit - Day 1",
+    title: "AI Innovation Summit",
     description: "Inauguration & AI Talk Show with distinguished guests. Interactive Q&A with students. Official Launch of The Great LPU's Hackathon 2025.",
     type: "summit",
   },

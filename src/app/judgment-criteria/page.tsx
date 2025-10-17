@@ -49,14 +49,19 @@ const problemStatements = [
 const cseDomains = [
   { name: "Artificial Intelligence & Machine Learning", icon: "🤖" },
   { name: "Computer Vision & Image Processing", icon: "👁️" },
-  { name: "Internet of Things (IoT) & Sensors", icon: "🌐" },
-  { name: "Data Analytics & Predictive Modeling", icon: "�" },
-  { name: "Mobile Application Development", icon: "📱" },
+  { name: "Internet of Things (IoT) & Smart Sensors", icon: "🌐" },
+  { name: "Data Analytics & Predictive Modeling", icon: "📊" },
+  { name: "Smart Transportation Systems", icon: "🚗" },
+  { name: "Smart Energy & Renewable Systems", icon: "⚡" },
+  { name: "Electric Vehicle (EV) Technology", icon: "🔋" },
+  { name: "Mobile App & Web Development", icon: "📱" },
   { name: "Game Development & Gamification", icon: "🎮" },
+  { name: "AR/VR & Simulation Technology", icon: "🥽" },
   { name: "Cloud Computing & Edge Computing", icon: "☁️" },
-  { name: "Simulation & Virtual Reality", icon: "🥽" },
-  { name: "Geographic Information Systems (GIS)", icon: "�️" },
-  { name: "Network & Communication Systems", icon: "📡" },
+  { name: "Robotics & Mechatronics", icon: "�" },
+  { name: "Human-Computer Interaction (HCI)", icon: "👆" },
+  { name: "EdTech & Behavioral Psychology", icon: "🎓" },
+  { name: "Smart City & IoT Infrastructure", icon: "🏙️" },
 ];
 
 export default function JudgmentCriteria() {
@@ -235,7 +240,7 @@ export default function JudgmentCriteria() {
         {/* CSE Domains Section */}
         <div className="max-w-6xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-            💻 Relevant CSE Domains & Technologies
+            💻 Relevant Domains & Technologies
           </h2>
           <p className="text-center text-gray-400 text-lg mb-8 max-w-3xl mx-auto">
             Leverage these computer science domains to build innovative solutions for EV and road safety challenges

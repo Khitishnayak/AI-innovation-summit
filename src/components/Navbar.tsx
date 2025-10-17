@@ -89,8 +89,9 @@ export default function Navbar() {
             href="/"
             className="text-sm sm:text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-300 hover:to-blue-300 transition-all duration-300 truncate max-w-[180px] sm:max-w-none"
           >
-            <span className="hidden sm:inline">AI INNOVATION SUMMIT 2025</span>
-            <span className="sm:hidden">AI SUMMIT 2025</span>
+            <span className="hidden sm:inline">THE GREAT LPU&apos;S</span>
+            <span className="hidden sm:inline"> IDEATHON 2025</span>
+        
           </Link>
 
           {/* Desktop Navigation */}

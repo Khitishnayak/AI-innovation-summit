@@ -94,17 +94,16 @@ export default function Navbar() {
           >
             <span className="hidden sm:inline">THE GREAT LPU&apos;S</span>
             <span className="hidden sm:inline"> IDEATHON 2025</span>
-        
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-6 flex-1 justify-center">
             {navItems.map((item, index) => (
               item.external ? (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group text-sm lg:text-base whitespace-nowrap"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 group-hover:w-full transition-all duration-300"></span>
@@ -113,7 +112,7 @@ export default function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group text-sm lg:text-base whitespace-nowrap"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 group-hover:w-full transition-all duration-300"></span>

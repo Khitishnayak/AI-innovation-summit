@@ -12,7 +12,7 @@ const features = [
     icon: FaTrophy,
     title: "₹45L Seed Funding",
     description:
-      "Grand prize from Mr. Saurav Mittal to transform your AI prototype into a startup reality.",
+      "Grand prize to transform your AI prototype into a startup reality.",
   },
   {
     icon: FaTrophy,

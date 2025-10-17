@@ -131,8 +131,7 @@ export default function Hero() {
             ref={titleRef}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-blue-200"
           >
-            AI INNOVATION SUMMIT 2025
-          </h1>
+            THE GREAT LPU&apos;s IDEATHON          </h1>
 
           <p
             ref={subtitleRef}
@@ -142,7 +141,7 @@ export default function Hero() {
           </p>
           
           <p className="text-lg md:text-xl text-purple-400 mb-8 font-semibold">
-            The Great LPU&apos;s Hackathon 2025 | 27th October - 11th November
+              27th October - 11th November
           </p>
 
           <div

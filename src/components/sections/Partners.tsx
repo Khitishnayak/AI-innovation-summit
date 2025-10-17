@@ -85,7 +85,8 @@ export default function Partners() {
           Ticket Booking Platform
         </h3>
 
-        <div className="flex justify-center">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          {/* Macbease Logo */}
           <a
             ref={logoRef}
             href={macbeaseUrl}
@@ -107,6 +108,25 @@ export default function Partners() {
               />
             </div>
           </a>
+
+          {/* QR Code */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 p-4 rounded-2xl glass-card-dark neon-border-purple overflow-hidden group">
+              <div className="absolute inset-0 iridescent-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10 w-full h-full bg-white rounded-xl p-2">
+                <Image
+                  src="/images/partners/macbeaseqr.jpeg"
+                  alt="Macbease Registration QR Code"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            <p className="text-gray-300 text-sm text-center">
+              <span className="text-purple-400 font-semibold">Scan to Register</span>
+            </p>
+          </div>
         </div>
 
         <p className="text-center text-gray-500 text-sm mt-6">

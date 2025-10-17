@@ -83,7 +83,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10"
+      className="fixed top-0 left-0 right-0 z-[100] bg-black/90 backdrop-blur-md border-b border-white/10"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -137,20 +137,21 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white relative w-8 h-8 flex items-center justify-center"
+            className="md:hidden text-white relative w-10 h-10 flex items-center justify-center bg-purple-600/20 rounded-lg border border-purple-500/30 hover:bg-purple-600/30 transition-all"
+            aria-label="Toggle menu"
           >
             <span
-              className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
                 isOpen ? "rotate-45" : "-translate-y-2"
               }`}
             ></span>
             <span
-              className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             ></span>
             <span
-              className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
                 isOpen ? "-rotate-45" : "translate-y-2"
               }`}
             ></span>
@@ -159,35 +160,40 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div ref={mobileMenuRef} className="md:hidden py-4">
-            {navItems.map((item) => (
-              item.external ? (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block w-full text-left py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded px-2 transition-all"
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <button
-                  key={item.name}
-                  onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded px-2 transition-all"
-                >
-                  {item.name}
-                </button>
-              )
-            ))}
-                        <a
-              href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 text-center"
-            >
-              Register Now
-            </a>
+          <div 
+            ref={mobileMenuRef} 
+            className="md:hidden py-4 px-3 bg-black border-t border-purple-500/30 shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
+          >
+            <div className="space-y-1 max-h-[70vh] overflow-y-auto">
+              {navItems.map((item) => (
+                item.external ? (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-purple-600/30 rounded-lg transition-all border border-purple-500/20 hover:border-purple-500 bg-purple-900/10"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.href)}
+                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-purple-600/30 rounded-lg transition-all border border-purple-500/20 hover:border-purple-500 bg-purple-900/10"
+                  >
+                    {item.name}
+                  </button>
+                )
+              ))}
+              <a
+                href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 mt-3 rounded-full font-bold hover:from-purple-500 hover:to-blue-500 transition-all duration-300 text-center shadow-lg shadow-purple-500/50"
+              >
+                Register Now
+              </a>
+            </div>
           </div>
         )}
       </div>

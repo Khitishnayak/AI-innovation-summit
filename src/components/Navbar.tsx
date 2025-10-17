@@ -15,6 +15,9 @@ export default function Navbar() {
     { name: "Speakers", href: "#speakers" },
     { name: "Timeline", href: "#timeline" },
     { name: "Tracks", href: "#tracks" },
+    { name: "Criteria", href: "/judgment-criteria", external: true },
+    { name: "Rulebook", href: "/rulebook", external: true },
+    { name: "Seed Fund", href: "/seed-fund-process", external: true },
     { name: "FAQ", href: "#faq" },
   ];
 
@@ -97,14 +100,25 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.href)}
-                className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
-              >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
-              </button>
+              item.external ? (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+                >
+                  {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+              ) : (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item.href)}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+                >
+                  {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
+                </button>
+              )
             ))}
           </div>
 
@@ -147,13 +161,24 @@ export default function Navbar() {
         {isOpen && (
           <div ref={mobileMenuRef} className="md:hidden py-4">
             {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded px-2 transition-all"
-              >
-                {item.name}
-              </button>
+              item.external ? (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded px-2 transition-all"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item.href)}
+                  className="block w-full text-left py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded px-2 transition-all"
+                >
+                  {item.name}
+                </button>
+              )
             ))}
                         <a
               href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"

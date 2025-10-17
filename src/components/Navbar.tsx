@@ -90,7 +90,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-sm sm:text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-300 hover:to-blue-300 transition-all duration-300 truncate max-w-[180px] sm:max-w-none"
+            className="text-sm sm:text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400 hover:from-green-300 hover:to-emerald-300 transition-all duration-300 truncate max-w-[180px] sm:max-w-none"
           >
             <span className="hidden sm:inline">THE GREAT LPU&apos;S</span>
             <span className="hidden sm:inline"> IDEATHON 2025</span>
@@ -107,7 +107,7 @@ export default function Navbar() {
                   className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               ) : (
                 <button
@@ -116,7 +116,7 @@ export default function Navbar() {
                   className="text-gray-300 hover:text-white transition-colors duration-200 relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 group-hover:w-full transition-all duration-300"></span>
                 </button>
               )
             ))}
@@ -128,7 +128,7 @@ export default function Navbar() {
               href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:block bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+              className="hidden md:block bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 hover:text-white transition-all duration-300 transform hover:scale-105"
             >
               Register
             </a>
@@ -137,21 +137,21 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white relative w-10 h-10 flex items-center justify-center bg-purple-600/20 rounded-lg border border-purple-500/30 hover:bg-purple-600/30 transition-all"
+            className="md:hidden text-white relative w-10 h-10 flex items-center justify-center bg-green-600/20 rounded-lg border border-green-500/30 hover:bg-green-600/30 transition-all"
             aria-label="Toggle menu"
           >
             <span
-              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(16,185,129,0.8)] transition-all duration-300 ${
                 isOpen ? "rotate-45" : "-translate-y-2"
               }`}
             ></span>
             <span
-              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(16,185,129,0.8)] transition-all duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             ></span>
             <span
-              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 ${
+              className={`absolute w-6 h-0.5 bg-white shadow-[0_0_10px_rgba(16,185,129,0.8)] transition-all duration-300 ${
                 isOpen ? "-rotate-45" : "translate-y-2"
               }`}
             ></span>
@@ -162,7 +162,7 @@ export default function Navbar() {
         {isOpen && (
           <div 
             ref={mobileMenuRef} 
-            className="md:hidden py-4 px-3 bg-black border-t border-purple-500/30 shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
+            className="md:hidden py-4 px-3 bg-black border-t border-green-500/30 shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
           >
             <div className="space-y-1 max-h-[70vh] overflow-y-auto">
               {navItems.map((item) => (
@@ -171,7 +171,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-purple-600/30 rounded-lg transition-all border border-purple-500/20 hover:border-purple-500 bg-purple-900/10"
+                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-green-600/30 rounded-lg transition-all border border-green-500/20 hover:border-green-500 bg-green-900/10"
                   >
                     {item.name}
                   </Link>
@@ -179,7 +179,7 @@ export default function Navbar() {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-purple-600/30 rounded-lg transition-all border border-purple-500/20 hover:border-purple-500 bg-purple-900/10"
+                    className="block w-full text-left py-3 px-4 text-white font-medium hover:bg-green-600/30 rounded-lg transition-all border border-green-500/20 hover:border-green-500 bg-green-900/10"
                   >
                     {item.name}
                   </button>
@@ -189,7 +189,7 @@ export default function Navbar() {
                 href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 mt-3 rounded-full font-bold hover:from-purple-500 hover:to-blue-500 transition-all duration-300 text-center shadow-lg shadow-purple-500/50"
+                className="block w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 mt-3 rounded-full font-bold hover:from-green-500 hover:to-emerald-500 transition-all duration-300 text-center shadow-lg shadow-green-500/50"
               >
                 Register Now
               </a>

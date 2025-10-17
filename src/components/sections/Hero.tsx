@@ -116,21 +116,22 @@ export default function Hero() {
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
+                {/* Animated background elements */}
         <div
           ref={bg1Ref}
-          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-purple-500/20 to-transparent rounded-full blur-3xl"
-        ></div>
+          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-green-500/20 to-transparent rounded-full blur-3xl"
+        />
         <div
           ref={bg2Ref}
-          className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-blue-500/20 to-transparent rounded-full blur-3xl"
-        ></div>
+          className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-emerald-500/20 to-transparent rounded-full blur-3xl"
+        />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h1
             ref={titleRef}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-blue-200"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-green-200 to-emerald-200"
           >
             THE GREAT LPU&apos;s IDEATHON          </h1>
 
@@ -141,7 +142,7 @@ export default function Hero() {
             Empowering the Green Revolution through AI
           </p>
           
-          <p className="text-lg md:text-xl text-purple-400 mb-8 font-semibold">
+          <p className="text-lg md:text-xl text-green-400 mb-8 font-semibold">
               27th October - 11th November
           </p>
 
@@ -153,7 +154,7 @@ export default function Hero() {
               href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-center"
+              className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-center"
             >
               Register Now
             </a>
@@ -166,24 +167,19 @@ export default function Hero() {
           </div>
           
           <div className="mt-12 max-w-4xl mx-auto">
-            <div className="relative p-6 sm:p-8 rounded-3xl glass-card-dark neon-border-purple overflow-hidden">
-              {/* Shimmer effect */}
-              <div className="absolute inset-0 iridescent-shimmer opacity-20"></div>
-              
-              <div className="relative z-10">
-                <h3 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6">
-                  ✨ Edu-Revolution Benefits
-                </h3>
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
-                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full border border-purple-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
-                    <span className="font-semibold">🏆 Grade Revision</span>
-                  </div>
-                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-full border border-blue-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
-                    <span className="font-semibold">🎓 Course Exemption</span>
-                  </div>
-                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full border border-green-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
-                    <span className="font-semibold">🚀 Incubation</span>
-                  </div>
+            <div className="glass-card-dark p-8 sm:p-10 rounded-3xl neon-border-purple relative overflow-hidden">
+              <h3 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 mb-6">
+                🎓 Edu-Revolution Benefits
+              </h3>
+              <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full border border-green-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                  ✅ Grade Revision
+                </div>
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-emerald-500/20 to-emerald-600/20 rounded-full border border-emerald-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                  ✅ Course Exemption
+                </div>
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-teal-500/20 to-teal-600/20 rounded-full border border-teal-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                  ✅ Incubation Access
                 </div>
               </div>
             </div>

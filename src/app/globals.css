@@ -49,12 +49,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #a855f7, #3b82f6);
+  background: linear-gradient(to bottom, #10b981, #059669);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #9333ea, #2563eb);
+  background: linear-gradient(to bottom, #059669, #047857);
 }
 
 /* Utility classes */
@@ -67,7 +67,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, rgb(192, 132, 252), rgb(236, 72, 153), rgb(96, 165, 250));
+    background-image: linear-gradient(to right, rgb(16, 185, 129), rgb(34, 197, 94), rgb(74, 222, 128));
   }
 
   .glass-effect {
@@ -94,48 +94,48 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   }
 
-  /* Cyberpunk Neon Text */
+  /* Cyberpunk Neon Text - Green Tech Theme */
   .neon-text {
     color: #fff;
     text-shadow: 
       0 0 5px #fff,
-      0 0 10px #0fa,
-      0 0 20px #0fa;
+      0 0 10px #10b981,
+      0 0 20px #10b981;
   }
 
   .neon-text-purple {
     color: #fff;
     text-shadow: 
       0 0 5px #fff,
-      0 0 10px #a855f7,
-      0 0 20px #a855f7;
+      0 0 10px #22c55e,
+      0 0 20px #22c55e;
   }
 
   .neon-text-blue {
     color: #fff;
     text-shadow: 
       0 0 5px #fff,
-      0 0 10px #3b82f6,
-      0 0 20px #3b82f6;
+      0 0 10px #10b981,
+      0 0 20px #10b981;
   }
 
   .neon-text-pink {
     color: #fff;
     text-shadow: 
       0 0 5px #fff,
-      0 0 10px #ec4899,
-      0 0 20px #ec4899;
+      0 0 10px #34d399,
+      0 0 20px #34d399;
   }
 
   .funky-border {
     position: relative;
     border: 2px solid transparent;
     background: linear-gradient(#000, #000) padding-box,
-      linear-gradient(135deg, #a855f7, #3b82f6) border-box;
+      linear-gradient(135deg, #10b981, #22c55e) border-box;
   }
 }
 
-/* Animated gradient background */
+/* Animated gradient background - Green Tech */
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
@@ -149,7 +149,7 @@ body {
 }
 
 .animated-gradient {
-  background: linear-gradient(270deg, #a855f7, #ec4899, #3b82f6);
+  background: linear-gradient(270deg, #10b981, #22c55e, #059669);
   background-size: 600% 600%;
   animation: gradient-shift 15s ease infinite;
 }
@@ -244,93 +244,93 @@ body {
   animation: shimmer 3s infinite;
 }
 
-/* Pulsating Neon Border Effects */
+/* Pulsating Neon Border Effects - Green Tech */
 @keyframes neon-pulse-purple {
   0%, 100% {
     box-shadow: 
-      0 0 3px #a855f7,
-      0 0 6px #a855f7,
-      0 0 12px #a855f7,
-      inset 0 0 5px rgba(168, 85, 247, 0.1);
+      0 0 3px #10b981,
+      0 0 6px #10b981,
+      0 0 12px #10b981,
+      inset 0 0 5px rgba(16, 185, 129, 0.1);
   }
   50% {
     box-shadow: 
-      0 0 5px #a855f7,
-      0 0 10px #a855f7,
-      0 0 20px #a855f7,
-      inset 0 0 10px rgba(168, 85, 247, 0.2);
+      0 0 5px #10b981,
+      0 0 10px #10b981,
+      0 0 20px #10b981,
+      inset 0 0 10px rgba(16, 185, 129, 0.2);
   }
 }
 
 @keyframes neon-pulse-blue {
   0%, 100% {
     box-shadow: 
-      0 0 3px #3b82f6,
-      0 0 6px #3b82f6,
-      0 0 12px #3b82f6,
-      inset 0 0 5px rgba(59, 130, 246, 0.1);
+      0 0 3px #22c55e,
+      0 0 6px #22c55e,
+      0 0 12px #22c55e,
+      inset 0 0 5px rgba(34, 197, 94, 0.1);
   }
   50% {
     box-shadow: 
-      0 0 5px #3b82f6,
-      0 0 10px #3b82f6,
-      0 0 20px #3b82f6,
-      inset 0 0 10px rgba(59, 130, 246, 0.2);
+      0 0 5px #22c55e,
+      0 0 10px #22c55e,
+      0 0 20px #22c55e,
+      inset 0 0 10px rgba(34, 197, 94, 0.2);
   }
 }
 
 @keyframes neon-pulse-pink {
   0%, 100% {
     box-shadow: 
-      0 0 3px #ec4899,
-      0 0 6px #ec4899,
-      0 0 12px #ec4899,
-      inset 0 0 5px rgba(236, 72, 153, 0.1);
+      0 0 3px #34d399,
+      0 0 6px #34d399,
+      0 0 12px #34d399,
+      inset 0 0 5px rgba(52, 211, 153, 0.1);
   }
   50% {
     box-shadow: 
-      0 0 5px #ec4899,
-      0 0 10px #ec4899,
-      0 0 20px #ec4899,
-      inset 0 0 10px rgba(236, 72, 153, 0.2);
+      0 0 5px #34d399,
+      0 0 10px #34d399,
+      0 0 20px #34d399,
+      inset 0 0 10px rgba(52, 211, 153, 0.2);
   }
 }
 
 @keyframes neon-pulse-cyan {
   0%, 100% {
     box-shadow: 
-      0 0 3px #06b6d4,
-      0 0 6px #06b6d4,
-      0 0 12px #06b6d4,
-      inset 0 0 5px rgba(6, 182, 212, 0.1);
+      0 0 3px #059669,
+      0 0 6px #059669,
+      0 0 12px #059669,
+      inset 0 0 5px rgba(5, 150, 105, 0.1);
   }
   50% {
     box-shadow: 
-      0 0 5px #06b6d4,
-      0 0 10px #06b6d4,
-      0 0 20px #06b6d4,
-      inset 0 0 10px rgba(6, 182, 212, 0.2);
+      0 0 5px #059669,
+      0 0 10px #059669,
+      0 0 20px #059669,
+      inset 0 0 10px rgba(5, 150, 105, 0.2);
   }
 }
 
-/* Neon Border Classes */
+/* Neon Border Classes - Green Tech */
 .neon-border-purple {
-  border: 2px solid #a855f7;
+  border: 2px solid #10b981;
   animation: neon-pulse-purple 2s ease-in-out infinite;
 }
 
 .neon-border-blue {
-  border: 2px solid #3b82f6;
+  border: 2px solid #22c55e;
   animation: neon-pulse-blue 2s ease-in-out infinite;
 }
 
 .neon-border-pink {
-  border: 2px solid #ec4899;
+  border: 2px solid #34d399;
   animation: neon-pulse-pink 2s ease-in-out infinite;
 }
 
 .neon-border-cyan {
-  border: 2px solid #06b6d4;
+  border: 2px solid #059669;
   animation: neon-pulse-cyan 2s ease-in-out infinite;
 }
 

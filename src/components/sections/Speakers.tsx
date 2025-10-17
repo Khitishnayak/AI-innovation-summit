@@ -22,8 +22,8 @@ const speakers = [
   },
   {
     name: "Mr. Saurav Mittal",
-    title: "CEO",
-    subtitle: "Investor & Entrepreneur",
+    title: "CEO - SMG Electric Scooters",
+    subtitle: "Entrepreneur",
     description:
       "Visionary leader transforming urban transportation with a mission to reduce global CO2 footprint. Making high-tech electric scooters accessible to masses, paving way for sustainable future.",
     expertise: ["Green Technology", "EV Innovation", "Sustainable Mobility", "Entrepreneurship"],

@@ -102,7 +102,7 @@ export default function FAQ() {
     {
       question: "What is the prize for winning the hackathon?",
       answer:
-        "The winning team will receive up to ₹45L seed funding from Mr. Saurav Mittal to support prototype development and potential startup incubation. This is a significant opportunity to transform your idea into a real business.",
+        "The winning team will receive up to ₹45L seed funding to support prototype development and potential startup incubation. This is a significant opportunity to transform your idea into a real business.",
     },
     {
       question: "What are the Edu-Revolution Benefits?",

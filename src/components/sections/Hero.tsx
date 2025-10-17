@@ -164,15 +164,27 @@ export default function Hero() {
             </a>
           </div>
           
-          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base px-4">
-            <div className="px-3 sm:px-4 py-2 bg-purple-900/30 rounded-full border border-purple-500/30 whitespace-nowrap">
-              💰 ₹45L Funding
-            </div>
-            <div className="px-3 sm:px-4 py-2 bg-blue-900/30 rounded-full border border-blue-500/30 whitespace-nowrap">
-              🎓 Course Exemption
-            </div>
-            <div className="px-3 sm:px-4 py-2 bg-green-900/30 rounded-full border border-green-500/30 whitespace-nowrap">
-              🚀 Incubation
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="relative p-6 sm:p-8 rounded-3xl glass-card-dark neon-border-purple overflow-hidden">
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 iridescent-shimmer opacity-20"></div>
+              
+              <div className="relative z-10">
+                <h3 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6">
+                  ✨ Edu-Revolution Benefits
+                </h3>
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
+                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-full border border-purple-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                    <span className="font-semibold">💰 ₹45L Funding</span>
+                  </div>
+                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-full border border-blue-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                    <span className="font-semibold">🎓 Course Exemption</span>
+                  </div>
+                  <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full border border-green-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                    <span className="font-semibold">🚀 Incubation</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

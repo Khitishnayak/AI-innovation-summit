@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger);
 const features = [
   {
     icon: FaTrophy,
-    title: "₹45L Seed Funding",
+    title: "Winter Internship Opportunity",
     description:
-      "Grand prize to transform your AI prototype into a startup reality.",
+      "Top performers get exclusive winter internship opportunities with leading tech companies and startups.",
   },
   {
     icon: FaTrophy,

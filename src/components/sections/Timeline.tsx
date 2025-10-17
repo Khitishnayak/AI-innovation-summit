@@ -34,7 +34,7 @@ const timeline = [
   {
     date: "11 Nov 2025",
     title: "Final Evaluation",
-    description: "Prototype 3 evaluation and final presentations. Winner announcement and ₹45L seed funding award ceremony.",
+    description: "Prototype 3 evaluation and final presentations. Winner announcement and ₹45L funding award ceremony.",
     type: "evaluation",
   },
 ];

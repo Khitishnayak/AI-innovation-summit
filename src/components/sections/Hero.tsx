@@ -64,6 +64,7 @@ export default function Hero() {
             opacity: 0,
             duration: 0.8,
             stagger: 0.2,
+            clearProps: "all",
           },
           "-=0.4"
         )
@@ -148,19 +149,20 @@ export default function Hero() {
 
           <div
             ref={buttonsRef}
-            className="flex flex-col sm:flex-row gap-4 justify-center px-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center px-4 relative z-20"
+            style={{ opacity: 1 }}
           >
             <a
               href="https://tinyurl.com/MacbeaseTheGreatLPUIdeathon"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-center"
+              className="group bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:from-green-400 hover:to-emerald-500 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/50 hover:shadow-green-400/70 hover:shadow-2xl text-center"
             >
               Register Now
             </a>
             <a
               href="#about"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-center"
+              className="border-2 border-white bg-white/10 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-center"
             >
               Learn More
             </a>

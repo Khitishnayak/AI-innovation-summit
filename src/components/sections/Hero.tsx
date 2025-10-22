@@ -172,13 +172,13 @@ export default function Hero() {
                 🎓 Edu-Revolution Benefits
               </h3>
               <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
-                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full border border-green-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full border border-green-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap text-white font-semibold">
                   ✅ Grade Revision
                 </div>
-                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-emerald-500/20 to-emerald-600/20 rounded-full border border-emerald-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-emerald-500/20 to-emerald-600/20 rounded-full border border-emerald-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap text-white font-semibold">
                   ✅ Course Exemption
                 </div>
-                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-teal-500/20 to-teal-600/20 rounded-full border border-teal-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+                <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-teal-500/20 to-teal-600/20 rounded-full border border-teal-400/40 backdrop-blur-sm hover:scale-105 transition-transform duration-300 whitespace-nowrap text-white font-semibold">
                   ✅ Incubation Access
                 </div>
               </div>

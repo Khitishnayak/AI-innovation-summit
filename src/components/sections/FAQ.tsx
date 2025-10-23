@@ -100,6 +100,16 @@ export default function FAQ() {
         "All LPU students from any department can participate. Teams can be formed from the same department or different departments. Interdisciplinary teams receive bonus points!",
     },
     {
+      question: "What is the team size requirement?",
+      answer:
+        "Teams can have a minimum of 1 member and a maximum of 4 members. You can participate individually or form a team with up to 3 other participants. Choose your team size based on your project requirements and collaboration preferences.",
+    },
+    {
+      question: "How do teams register for the hackathon?",
+      answer:
+        "One team member can register on behalf of the entire team. During registration, provide details of all team members including their names, contact information, and departments. The team leader will be the primary point of contact for all communications.",
+    },
+    {
       question: "What is the prize for winning the hackathon?",
       answer:
         "The winning team will receive up to ₹45L seed funding to support prototype development and potential startup incubation. This is a significant opportunity to transform your idea into a real business.",

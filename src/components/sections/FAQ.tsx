@@ -134,6 +134,11 @@ export default function FAQ() {
       answer:
         "LPU provides dedicated on-campus workspace for project development, copyright and patent assistance for original innovations, and startup incubation and mentorship for winning teams. Full support from ideation to market launch!",
     },
+    {
+      question: " Is it necessary to attend if we register?",
+      answer:
+        "Yes, attendance is mandatory for all registered participants. Otherwise strict action will be taken.",
+    }
   ];
 
   useEffect(() => {
